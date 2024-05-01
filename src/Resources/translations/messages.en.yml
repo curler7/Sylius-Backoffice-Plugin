@@ -1,0 +1,18 @@
+abenmada_backoffice_plugin:
+    ui:
+        backoffice_appearance: Back office appearance
+        images: Images
+    form:
+        color_primary_button: Main buttons color
+        background_color_primary_button: Main button background color
+        color_link: Links color
+        color_checkbox: Checkbox color
+        color_header_icon: Header icons color
+        background_color_header_icon: Header icons background color
+        color_sortable_active_column: Grid column sort icons color
+        background_color_menu: Admin menu background color
+        color_sub_item: Admin menu tab color
+        color_sub_item_hover: Admin menu tab color on hover
+        color_sub_item_active: Admin menu active tab color
+        background_color_sub_item_active: Admin menu active tab background color
+        images: Images

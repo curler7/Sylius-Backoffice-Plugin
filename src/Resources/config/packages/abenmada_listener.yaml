@@ -1,0 +1,8 @@
+services:
+    abenmada_backoffice_plugin.listener.channel_images_upload:
+        class: Sylius\Bundle\CoreBundle\EventListener\ImagesUploadListener
+        parent: sylius.listener.images_upload
+        public: false
+        tags:
+            - { name: kernel.event_listener, event: sylius.channel.pre_create, method: uploadImages }
+            - { name: kernel.event_listener, event: sylius.channel.pre_update, method: uploadImages }

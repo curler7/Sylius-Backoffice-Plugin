@@ -1,0 +1,15 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    Abenmada\BackofficePlugin\:
+        resource: '../../*'
+        exclude: '../../{Form}'
+
+imports:
+    - { resource: "packages/abenmada_form.yaml" }
+    - { resource: "packages/abenmada_event.yaml" }
+    - { resource: "packages/abenmada_resource.yaml" }
+    - { resource: "packages/abenmada_listener.yaml" }

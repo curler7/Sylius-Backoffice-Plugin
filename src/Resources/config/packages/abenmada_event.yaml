@@ -1,0 +1,22 @@
+sylius_ui:
+    events:
+        sylius.admin.channel.form.content:
+            blocks:
+                abenmada_backoffice_plugin_color_column:
+                    template: '@BackofficePlugin/Channel/Form/_color.html.twig'
+                    priority: 9
+                abenmada_backoffice_plugin_images_column:
+                    template: '@BackofficePlugin/Channel/Form/_images.html.twig'
+                    priority: 8
+
+        sylius.admin.layout.stylesheets:
+            blocks:
+                abenmada_backoffice_plugin_styles:
+                    template: "@BackofficePlugin/Layout/_styles.html.twig"
+                    priority: 9
+
+        sylius.admin.layout.javascripts:
+            blocks:
+                abenmada_backoffice_plugin_scripts:
+                    template: "@BackofficePlugin/Layout/_scripts.html.twig"
+                    priority: 9

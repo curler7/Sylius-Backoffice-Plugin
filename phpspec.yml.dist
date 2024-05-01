@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: Abenmada\BackofficePlugin
+        psr4_prefix: Abenmada\BackofficePlugin

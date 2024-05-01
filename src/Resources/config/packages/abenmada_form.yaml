@@ -1,0 +1,14 @@
+services:
+    abenmada_backoffice_plugin.form.extension.channel:
+        class: Abenmada\BackofficePlugin\Form\Extension\ChannelTypeExtension
+        arguments: [ ]
+        tags:
+            - { name: form.type_extension, extended_type: Sylius\Bundle\ChannelBundle\Form\Type\ChannelType }
+
+    abenmada_backoffice_plugin.form.type.channel_image:
+        class: Abenmada\BackofficePlugin\Form\Type\ChannelImageType
+        tags:
+            - { name: form.type }
+        arguments:
+            - '%abenmada_backoffice_plugin.model.channel_image.class%'
+            - [ 'sylius' ]

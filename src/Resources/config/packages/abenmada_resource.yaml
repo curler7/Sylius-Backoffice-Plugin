@@ -1,0 +1,7 @@
+sylius_resource:
+    resources:
+        abenmada_backoffice_plugin.channel_image:
+            driver: doctrine/orm
+            classes:
+                model: Abenmada\BackofficePlugin\Entity\Channel\ChannelImage
+                form: Abenmada\BackofficePlugin\Form\Type\ChannelImageType
