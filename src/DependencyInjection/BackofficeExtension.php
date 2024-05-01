@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace Abenmada\BackofficePlugin\DependencyInjection;
 
+use function array_merge;
+use function array_pop;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
-
-use function array_merge;
-use function array_pop;
 
 final class BackofficeExtension extends Extension implements PrependExtensionInterface
 {

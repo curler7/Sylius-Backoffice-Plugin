@@ -184,7 +184,7 @@ trait ChannelTrait
 
     public function hasImages(): bool
     {
-        return ! $this->images->isEmpty();
+        return !$this->images->isEmpty();
     }
 
     public function hasImage(ImageInterface $image): bool
@@ -200,7 +200,7 @@ trait ChannelTrait
 
     public function removeImage(ImageInterface $image): void
     {
-        if (! $this->hasImage($image)) {
+        if (!$this->hasImage($image)) {
             return;
         }
 
