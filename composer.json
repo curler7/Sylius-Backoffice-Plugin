@@ -8,10 +8,10 @@
         "backoffice",
         "style"
     ],
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Ayman Benmada"
+            "name": "Ayman BENMADA"
         }
     ],
     "require": {
@@ -92,10 +92,8 @@
             "php bin/create_node_symlink.php"
         ],
         "phpstan": "phpstan analyse -c phpstan.neon -vvv --memory-limit=1024M",
-        "phpstan-baseline": "phpstan analyse -c phpstan.neon -vvv --memory-limit=1024M --generate-baseline",
         "cscheck": "phpcs -s",
         "csfix": "phpcbf -s",
-        "pest": "pest --coverage",
-        "lint": "composer csfix && composer cscheck && composer phpstan && composer pest"
+        "lint": "composer csfix && composer cscheck && composer phpstan"
     }
 }

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Abenmada\BackofficePlugin\Model\Channel;
 
+use Abenmada\BackofficePlugin\Entity\Channel\ChannelImage;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Abenmada\BackofficePlugin\Entity\Channel\ChannelImage;
 use Sylius\Component\Core\Model\ImageInterface;
 
 trait ChannelTrait
