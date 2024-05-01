@@ -4,27 +4,16 @@
     The Backoffice plugin allows you to change back office color and channel logo
 </p>
 
-<img sr
+![presentation photo](https://github.com/ayman-benmada/Sylius-Backoffice-Plugin/blob/main/src/Resources/public/presentation.png)
 
 ## Installation
 
+Require plugin with composer:
+
 Add in `composer.json`
 
-```json
-{
-    "repositories": [
-        {
-            "type": "path",
-            "url": "plugin/BackofficePlugin",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
-    "require": {
-        "abenmada/backoffice-plugin": "@dev"
-    }
-}
+```bash
+composer require abenmada/backoffice-plugin
 ```
 
 Change your `config/bundles.php` file to add the line for the plugin :
