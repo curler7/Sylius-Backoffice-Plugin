@@ -1,13 +1,9 @@
 {
     "name": "abenmada/backoffice-plugin",
-    "type": "project",
+    "type": "sylius-plugin",
+    "version": "1.0.0",
     "description": "The Backoffice plugin allows you to change back office color and channel logo",
-    "keywords": [
-        "symfony",
-        "sylius",
-        "backoffice",
-        "style"
-    ],
+    "keywords": ["sylius", "sylius-plugin", "symfony", "e-commerce", "backoffice", "style"],
     "license": "MIT",
     "authors": [
         {
@@ -67,6 +63,7 @@
             "dev-master": "1.10-dev"
         }
     },
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Abenmada\\BackofficePlugin\\": "src/",

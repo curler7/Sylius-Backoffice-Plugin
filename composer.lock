@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e4c9ed79198ff89ac1df8dc32aa9ed8",
+    "content-hash": "f71c77cad63cf497d989e1e829479aca",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -19579,7 +19579,7 @@
     "stability-flags": {
         "friendsofsymfony/oauth-server-bundle": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4 || ^8.0"
