@@ -62,3 +62,8 @@ class Channel extends BaseChannel implements ImagesAwareInterface
     }
 }
 ```
+
+Run the migration :
+```bash
+bin/console doctrine:migration:migrate
+```
