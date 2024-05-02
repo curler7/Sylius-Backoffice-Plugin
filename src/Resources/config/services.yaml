@@ -9,7 +9,7 @@ services:
         exclude: '../../{Form}'
 
 imports:
-    - { resource: "packages/abenmada_form.yaml" }
-    - { resource: "packages/abenmada_event.yaml" }
-    - { resource: "packages/abenmada_resource.yaml" }
-    - { resource: "packages/abenmada_listener.yaml" }
+    - { resource: "packages/form.yaml" }
+    - { resource: "packages/event.yaml" }
+    - { resource: "packages/resource.yaml" }
+    - { resource: "packages/listener.yaml" }
