@@ -13,6 +13,8 @@ use Sylius\Component\Core\Model\Image;
  *
  * @ORM\Table(name="abenmada_backoffice_channel_image")
  */
+#[ORM\Table(name: 'abenmada_backoffice_channel_image')]
+#[ORM\Entity]
 class ChannelImage extends Image
 {
     /**
@@ -22,5 +24,7 @@ class ChannelImage extends Image
      *
      * @var object|null
      */
+    #[ORM\JoinColumn(name: 'owner_id', referencedColumnName: 'id', nullable: false, onDelete: 'cascade')]
+    #[ORM\ManyToOne(targetEntity: Channel::class, inversedBy: 'images')]
     protected $owner;
 }

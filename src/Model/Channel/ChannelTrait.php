@@ -12,42 +12,55 @@ use Sylius\Component\Core\Model\ImageInterface;
 trait ChannelTrait
 {
     /** @ORM\Column(name="abenmada_color_primary_button", type="string", nullable=false, options={"default": "#FFFFFF"}) */
+    #[ORM\Column(name: 'abenmada_color_primary_button', type: 'string', nullable: false, options: ['default' => '#FFFFFF'])]
     private string $colorPrimaryButton = '#FFFFFF';
 
     /** @ORM\Column(name="abenmada_background_color_primary_button", type="string", nullable=false, options={"default": "#00B5AD"}) */
+    #[ORM\Column(name: 'abenmada_background_color_primary_button', type: 'string', nullable: false, options: ['default' => '#00B5AD'])]
     private string $backgroundColorPrimaryButton = '#00B5AD';
 
     /** @ORM\Column(name="abenmada_color_link", type="string", nullable=false, options={"default": "#00B5AD"}) */
+    #[ORM\Column(name: 'abenmada_color_link', type: 'string', nullable: false, options: ['default' => '#00B5AD'])]
     private string $colorLink = '#00B5AD';
 
     /** @ORM\Column(name="abenmada_color_checkbox", type="string", nullable=false, options={"default": "#00B5AD"}) */
+    #[ORM\Column(name: 'abenmada_color_checkbox', type: 'string', nullable: false, options: ['default' => '#00B5AD'])]
     private string $colorCheckbox = '#00B5AD';
 
     /** @ORM\Column(name="abenmada_color_header_icon", type="string", nullable=false, options={"default": "#00B5AD"}) */
+    #[ORM\Column(name: 'abenmada_color_header_icon', type: 'string', nullable: false, options: ['default' => '#00B5AD'])]
     private string $colorHeaderIcon = '#00B5AD';
 
     /** @ORM\Column(name="abenmada_background_color_header_icon", type="string", nullable=false, options={"default": "#E3F3F0"}) */
+    #[ORM\Column(name: 'abenmada_background_color_header_icon', type: 'string', nullable: false, options: ['default' => '#E3F3F0'])]
     private string $backgroundColorHeaderIcon = '#E3F3F0';
 
     /** @ORM\Column(name="abenmada_color_sortable_active_column", type="string", nullable=false, options={"default": "#00B5AD"}) */
+    #[ORM\Column(name: 'abenmada_color_sortable_active_column', type: 'string', nullable: false, options: ['default' => '#00B5AD'])]
     private string $colorSortableActiveColumn = '#00B5AD';
 
     /** @ORM\Column(name="abenmada_background_color_menu", type="string", nullable=false, options={"default": "#1E212B"}) */
+    #[ORM\Column(name: 'abenmada_background_color_menu', type: 'string', nullable: false, options: ['default' => '#1E212B'])]
     private string $backgroundColorMenu = '#1E212B';
 
     /** @ORM\Column(name="abenmada_color_sub_item", type="string", nullable=false, options={"default": "#8E9095"}) */
+    #[ORM\Column(name: 'abenmada_color_sub_item', type: 'string', nullable: false, options: ['default' => '#8E9095'])]
     private string $colorSubItem = '#8E9095';
 
     /** @ORM\Column(name="abenmada_color_sub_item_hover", type="string", nullable=false, options={"default": "#FFFFFF"}) */
+    #[ORM\Column(name: 'abenmada_color_sub_item_hover', type: 'string', nullable: false, options: ['default' => '#FFFFFF'])]
     private string $colorSubItemHover = '#FFFFFF';
 
     /** @ORM\Column(name="abenmada_color_sub_item_active", type="string", nullable=false, options={"default": "#FFFFFF"}) */
+    #[ORM\Column(name: 'abenmada_color_sub_item_active', type: 'string', nullable: false, options: ['default' => '#FFFFFF'])]
     private string $colorSubItemActive = '#FFFFFF';
 
     /** @ORM\Column(name="abenmada_background_color_sub_item_active", type="string", nullable=false, options={"default": "#00B5AD"}) */
+    #[ORM\Column(name: 'abenmada_background_color_sub_item_active', type: 'string', nullable: false, options: ['default' => '#00B5AD'])]
     private string $backgroundColorSubItemActive = '#00B5AD';
 
     /** @ORM\OneToMany(targetEntity=ChannelImage::class, mappedBy="owner", orphanRemoval=true, cascade={"all"}) */
+    #[ORM\OneToMany(targetEntity: ChannelImage::class, mappedBy: 'owner', orphanRemoval: true, cascade: ['all'])]
     private Collection $images;
 
     public function getColorPrimaryButton(): string
