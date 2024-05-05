@@ -13,3 +13,8 @@
 - Adding phpstan and php-cs-fixer
 - Configure github workflow
 - Upgrade dependencies
+
+## CHANGELOG FOR `v1.0.2` (2024-05-05)
+
+- Support Doctrine mapping metadata using PHP attributes
+- Upgrade dependencies
