@@ -1,4 +1,4 @@
-<h1>Backoffice plugin</h1>
+<h1>Sylius Backoffice Plugin</h1>
 
 <p>
     The Backoffice plugin allows you to change back office color and channel logo
@@ -11,7 +11,7 @@
 Require plugin with composer :
 
 ```bash
-composer require abenmada/backoffice-plugin
+composer require abenmada/sylius-backoffice-plugin
 ```
 
 Change your `config/bundles.php` file to add the line for the plugin :

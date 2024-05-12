@@ -18,3 +18,7 @@
 
 - Support Doctrine mapping metadata using PHP attributes
 - Upgrade dependencies
+
+## CHANGELOG FOR `v1.0.3` (2024-05-12)
+
+- Update plugin name
