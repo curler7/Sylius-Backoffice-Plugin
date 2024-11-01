@@ -1,0 +1,18 @@
+abenmada_backoffice_plugin:
+    ui:
+        backoffice_appearance: Aussehen des Backoffice
+        images: Bilder
+    form:
+        color_primary_button: Farbe der Hauptschaltflächen
+        background_color_primary_button: Hintergrundfarbe der Hauptschaltflächen
+        color_link: Farbe der Links
+        color_checkbox: Farbe der Kontrollkästchen
+        color_header_icon: Farbe der Header-Icons
+        background_color_header_icon: Hintergrundfarbe der Header-Icons
+        color_sortable_active_column: Farbe der Sortier-Icons in der aktiven Spalte
+        background_color_menu: Hintergrundfarbe des Administrationsmenüs
+        color_sub_item: Farbe der Untermenü-Tabs
+        color_sub_item_hover: Farbe der Untermenü-Tabs im Hover-Zustand
+        color_sub_item_active: Farbe des aktiven Untermenü-Tabs
+        background_color_sub_item_active: Hintergrundfarbe des aktiven Untermenü-Tabs
+        images: Bilder
