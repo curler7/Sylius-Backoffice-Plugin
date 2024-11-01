@@ -22,3 +22,27 @@
 ## CHANGELOG FOR `v1.0.3` (2024-05-12)
 
 - Update plugin name
+
+## [Unreleased]
+### Added
+- **Dependency Injection:**
+    - Introduced `ResolveTargetEntityCompilerPass` to resolve the target entity class for `ChannelInterface`.
+
+  See [ResolveTargetEntityCompilerPass.php](src/DependencyInjection/Compiler/ResolveTargetEntityCompilerPass.php)
+
+
+- **Entity Management:**
+    - Updated `ChannelImage` entity class to establish a many-to-one relationship with `ChannelInterface`, allowing for the management of channel-specific images through an interface instead of a class.
+
+  See [ChannelImage.php](src/Entity/Channel/ChannelImage.php)
+
+
+- **Migrations:**
+    - Created migration class `Version20241101104421` for PostgreSQL to manage the database schema changes, including the creation of the `abenmada_backoffice_channel_image` table and additional fields in the `sylius_channel` table.
+
+  See [Version20241101104421.php](src/Migrations/Version20241101104421.php)
+
+### Configuration
+- Added configuration parameter `abenmada.backoffice.channel_class` to allow customization of the channel entity class. Users can specify this parameter directly in the configuration file or through the environment variable `ABENMADA_BACKOFFICE_CHANNEL_CLASS`, which defaults to `App\Entity\Channel\Channel`.
+
+  See [services.yaml](src/Resources/config/services.yaml)
