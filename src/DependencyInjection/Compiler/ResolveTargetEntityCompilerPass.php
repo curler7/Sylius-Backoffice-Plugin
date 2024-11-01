@@ -12,6 +12,8 @@ use Symfony\Component\DependencyInjection\Reference;
 
 class ResolveTargetEntityCompilerPass implements CompilerPassInterface
 {
+    private const string CHANNEL_CLASS_PARAMETER = 'abenmada.backoffice.channel_class';
+
     public function process(ContainerBuilder $container)
     {
         if (!$container->hasDefinition('doctrine.orm.listeners.resolve_target_entity')) {
@@ -23,7 +25,7 @@ class ResolveTargetEntityCompilerPass implements CompilerPassInterface
 
         $listener->addMethodCall('addResolveTargetEntity', [
             ChannelInterface::class,
-            $container->getParameter('abenmada_backoffice_plugin.channel_class'),
+            $container->getParameter(self::CHANNEL_CLASS_PARAMETER),
             []
         ]);
     }
