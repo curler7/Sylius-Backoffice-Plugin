@@ -83,11 +83,12 @@ You have two migration versions available: [Version20220803192855 for MySQL](src
 bin/console doctrine:migration:migrate
 ```
 
-### Configure the parameter (optional):
+### Configure the Channel Entity Class (Optional)
 If your channel entity class differs from the default, you need to set the `abenmada.backoffice.channel_class` parameter in your `config/services.yaml`, or you can set the `ABENMADA_BACKOFFICE_CHANNEL_CLASS` environment variable. This parameter specifies which class to use for the channel entity.
 ```yaml
 parameters:
-  abenmada.backoffice.channel_class: '%env(ABENMADA_BACKOFFICE_CHANNEL_CLASS)|App\Entity\Channel\Channel%'  # Default
+  abenmada.backoffice.channel.default_class: 'App\Entity\Channel\Channel'   # Default
+  abenmada.backoffice.channel_class: '%env(default:abenmada.backoffice.channel.default_class:ABENMADA_BACKOFFICE_CHANNEL_CLASS)%'
 ```
 > **Note:** If you are using the default namespace, this step can be skipped.
 
