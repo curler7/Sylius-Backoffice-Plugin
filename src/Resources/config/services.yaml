@@ -1,5 +1,5 @@
 parameters:
-    abenmada.backoffice.channel_class: '%env(ABENMADA_BACKOFFICE_CHANNEL_CLASS:App\Entity\Channel\Channel)%'
+    abenmada.backoffice.channel_class: '%env(ABENMADA_BACKOFFICE_CHANNEL_CLASS)|App\Entity\Channel\Channel%'
 
 services:
     # default configuration for services in *this* file
