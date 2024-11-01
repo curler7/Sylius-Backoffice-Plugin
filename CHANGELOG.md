@@ -46,3 +46,8 @@
 - Added configuration parameter `abenmada.backoffice.channel_class` to allow customization of the channel entity class. Users can specify this parameter directly in the configuration file or through the environment variable `ABENMADA_BACKOFFICE_CHANNEL_CLASS`, which defaults to `App\Entity\Channel\Channel`.
 
   See [services.yaml](src/Resources/config/services.yaml)
+
+### Translations
+- Added German translations for the backoffice plugin interface and forms to enhance localization support.
+
+  See [messages.de.yml](src/Resources/translations/messages.de.yml)
